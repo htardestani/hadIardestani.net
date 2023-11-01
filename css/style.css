@@ -455,38 +455,69 @@ a:focus {
     background: #222222;
 }
 
-.about .skills {
-    padding-top: 15px;
+
+/**********************************/
+/********** Skillss CSS *********/
+/**********************************/
+.Skillss {
+    position: relative;
+    padding: 60px 30px 30px 30px;
+    background: #ffffff;
+    border-bottom: 30px solid #fd8c5cb6;
 }
 
-.about .skill-name {
+
+.Skillss  .nav-tabs .nav-link {
+    cursor: pointer;
+    margin: 15px -1px 0 0;
+    display: inline-block;
+    height: 35px;
+    padding: 10px;
+    color: #666666;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+    border: 1px solid #FF6F61;
+    background: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.Skillss  .nav-tabs .nav-link.active {
+     background: #FF6F61;
+    
+}
+
+.Skillss  .nav-tabs .nav-link:hover,
+.Skillss #Skillss-flters #nav-item {
+    background: #FF6F61;
+    color: #222222;
+}
+
+.Skillss-item {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+
+ .skill-name {
     margin-top: 15px;
 }
 
-.about .skill-name p {
-    display: inline-block;
+.skill-name p {
+    display: inline;
     margin-bottom: 5px;
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: 650;
 }
 
-.about .skill-name p:last-child {
+.skill-name p:last-child {
     float: right;
 }
 
-.about .progress {
-    height: 5px;
-    border: 1px solid #000000;
-    border-radius: 0;
-    background: #ffffff;
-}
 
-.about .progress .progress-bar {
-    width: 1px;
-    background: #000000;
-    border-radius: 0;
-    transition: 1s;
-}
+
+
 
 
 /**********************************/
@@ -648,6 +679,88 @@ a:focus {
     margin: 0;
 }
 
+/**********************************/
+/********* Certificate CSS **********/
+/**********************************/
+.Certificate {
+    position: relative;
+    padding: 60px 30px;
+    background: #ffffff;
+    border-bottom: 30px solid #fd8c5cb6;
+}
+
+.Certificate .cert-col {
+    position: relative;
+    width: 100%;
+    padding: 20px 0 20px 20px;
+    border-left: 1px solid #FF6F61;
+    border-bottom: 1px solid #FF6F61;
+}
+
+.Certificate .col-md-6:first-child .cert-col {
+    padding-top: 0;
+}
+
+.Certificate .col-md-6:last-child .cert-col {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .Certificate .col-md-6:nth-child(-n+2) .cert-col {
+        padding-top: 0;
+    }
+
+    .Certificate .col-md-6:last-child .cert-col,
+    .Certificate .col-md-6:nth-last-child(2) .cert-col {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+}
+
+.Certificate .cert-col span {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.Certificate .cert-col span::before {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 11px;
+    background: #FF6F61;
+    top: 5px;
+    left: -26px;
+    border-radius: 5px;
+}
+
+.Certificate .cert-col span i {
+    color: #FF6F61;
+}
+
+.Certificate .cert-col h3 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.Certificate .cert-col p {
+    margin: 0.5;
+}
+.Certificate .btn {
+    border-radius: 0;
+    color: #222222;
+    background: #FF6F61;
+    transition: all .3s;
+}
+
+.Certificate .btn:hover {
+    color: #FF6F61;
+    background: #222222;
+}
 
 /**********************************/
 /*********** Service CSS **********/

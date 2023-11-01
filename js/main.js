@@ -37,6 +37,19 @@
             $(this).css("width", $(this).attr("aria-valuenow") + '%');
         });
     }, {offset: '80%'});
+
+       // Skillss isotope and filter
+       var skillssIsotope = $('.skillss-container').isotope({
+        itemSelector: '.skillss-item',
+        layoutMode: 'fitRows'
+    });
+
+    $('#skillss-flters li').on('click', function () {
+        $("#skillss-flters li").removeClass('filter-active');
+        $(this).addClass('filter-active');
+
+        skillssIsotope.isotope({filter: $(this).data('filter')});
+    });
     
     
     // Porfolio isotope and filter
